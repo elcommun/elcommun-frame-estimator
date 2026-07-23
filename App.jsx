@@ -219,7 +219,6 @@ function buildMail(shop,validRows,grandTotalEx){
 
 ${stdLines.join("\n\n")}
 
-※ 規格品をご希望の場合は、その旨をご返信ください。改めてご案内いたします。
 ※ 下記【別注サイズのご購入方法】は、上記お見積もりの別注サイズをご注文いただく場合の手順です。`
     :"";
   let urlSection;
