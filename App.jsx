@@ -30,36 +30,36 @@ const FF_PT=[
   [9000,9300,9600,9800,10100,10400,10600,10800,11200,11400,11800,12400,12900,13400,13700,13900],
 ];
 const FF_STD=[
-  {name:"B1",w:728,h:1030,kg:2.3,priceWBS:5500,priceGD:5830},
-  {name:"輸入菊全",w:680,h:990,kg:2.1,priceWBS:5500,priceGD:5830},
-  {name:"変形菊全",w:600,h:900,kg:1.7,priceWBS:4840,priceGD:5170},
-  {name:"A1",w:594,h:841,kg:1.6,priceWBS:4290,priceGD:4620},
-  {name:"B2",w:515,h:728,kg:1.2,priceWBS:3410,priceGD:3630},
-  {name:"A2",w:420,h:594,kg:0.88,priceWBS:2970,priceGD:3190},
-  {name:"B3",w:364,h:515,kg:0.69,priceWBS:2750,priceGD:2970},
-  {name:"A3",w:297,h:420,kg:0.51,priceWBS:2090,priceGD:2310},
-  {name:"B4",w:257,h:364,kg:0.46,priceWBS:1980,priceGD:2090},
-  {name:"A4",w:210,h:297,kg:0.31,priceWBS:1650,priceGD:1760},
-  {name:"B5",w:182,h:257,kg:0.26,priceWBS:1540,priceGD:1650},
-  {name:"全紙",w:545,h:727,kg:1.3,priceWBS:4400,priceGD:4730},
-  {name:"三々",w:454,h:606,kg:0.93,priceWBS:3630,priceGD:3960},
-  {name:"半切",w:424,h:545,kg:0.8,priceWBS:3300,priceGD:3520},
-  {name:"大衣",w:394,h:509,kg:0.71,priceWBS:2970,priceGD:3190},
-  {name:"四ツ切",w:348,h:424,kg:0.54,priceWBS:2310,priceGD:2530},
-  {name:"太子",w:288,h:379,kg:0.42,priceWBS:1980,priceGD:2090},
-  {name:"八ツ切",w:242,h:303,kg:0.31,priceWBS:1760,priceGD:1870},
-  {name:"インチ",w:203,h:255,kg:0.23,priceWBS:1650,priceGD:1760},
-  {name:"700×1000",w:700,h:1000,kg:2.1,priceWBS:5500,priceGD:5830},
-  {name:"685×990",w:685,h:990,kg:2.0,priceWBS:5500,priceGD:5830},
-  {name:"680×980",w:680,h:980,kg:1.95,priceWBS:5500,priceGD:5830},
-  {name:"640×900",w:640,h:900,kg:1.8,priceWBS:4730,priceGD:5060},
-  {name:"610×915",w:610,h:915,kg:1.8,priceWBS:4730,priceGD:5060},
-  {name:"610×864",w:610,h:864,kg:1.7,priceWBS:4620,priceGD:4950},
-  {name:"600×800",w:600,h:800,kg:1.5,priceWBS:4290,priceGD:4620},
-  {name:"500×700",w:500,h:700,kg:1.2,priceWBS:3300,priceGD:3520},
-  {name:"450×600",w:450,h:600,kg:0.93,priceWBS:2860,priceGD:3080},
-  {name:"400×500",w:400,h:500,kg:0.73,priceWBS:2420,priceGD:2640},
-  {name:"300×400",w:300,h:400,kg:0.5,priceWBS:1980,priceGD:2200},
+  {name:"B1",w:728,h:1030,kg:2.3,priceWBS:5500,priceGD:5830,urlKey:"af72_103"},
+  {name:"輸入菊全",w:680,h:990,kg:2.1,priceWBS:5500,priceGD:5830,urlKey:"af68_99"},
+  {name:"変形菊全",w:600,h:900,kg:1.7,priceWBS:4840,priceGD:5170,urlKey:"af60_90"},
+  {name:"A1",w:594,h:841,kg:1.6,priceWBS:4290,priceGD:4620,urlKey:"af59_84"},
+  {name:"B2",w:515,h:728,kg:1.2,priceWBS:3410,priceGD:3630,urlKey:"af51_72"},
+  {name:"A2",w:420,h:594,kg:0.88,priceWBS:2970,priceGD:3190,urlKey:"af42_59"},
+  {name:"B3",w:364,h:515,kg:0.69,priceWBS:2750,priceGD:2970,urlKey:"af36_51"},
+  {name:"A3",w:297,h:420,kg:0.51,priceWBS:2090,priceGD:2310,urlKey:"af29_42"},
+  {name:"B4",w:257,h:364,kg:0.46,priceWBS:1980,priceGD:2090,urlKey:"af25_36"},
+  {name:"A4",w:210,h:297,kg:0.31,priceWBS:1650,priceGD:1760,urlKey:"af21_29"},
+  {name:"B5",w:182,h:257,kg:0.26,priceWBS:1540,priceGD:1650,urlKey:"af18_25"},
+  {name:"全紙",w:545,h:727,kg:1.3,priceWBS:4400,priceGD:4730,urlKey:"af54_72"},
+  {name:"三々",w:454,h:606,kg:0.93,priceWBS:3630,priceGD:3960,urlKey:"af45_60ss"},
+  {name:"半切",w:424,h:545,kg:0.8,priceWBS:3300,priceGD:3520,urlKey:"af42_54"},
+  {name:"大衣",w:394,h:509,kg:0.71,priceWBS:2970,priceGD:3190,urlKey:"af39_50"},
+  {name:"四ツ切",w:348,h:424,kg:0.54,priceWBS:2310,priceGD:2530,urlKey:"af34_42"},
+  {name:"太子",w:288,h:379,kg:0.42,priceWBS:1980,priceGD:2090,urlKey:"af28_37"},
+  {name:"八ツ切",w:242,h:303,kg:0.31,priceWBS:1760,priceGD:1870,urlKey:"af24_30"},
+  {name:"インチ",w:203,h:255,kg:0.23,priceWBS:1650,priceGD:1760,urlKey:"af20_25"},
+  {name:"700×1000",w:700,h:1000,kg:2.1,priceWBS:5500,priceGD:5830,urlKey:"af70_100"},
+  {name:"685×990",w:685,h:990,kg:2.0,priceWBS:5500,priceGD:5830,urlKey:"af68_99kz"},
+  {name:"680×980",w:680,h:980,kg:1.95,priceWBS:5500,priceGD:5830,urlKey:"af68_98"},
+  {name:"640×900",w:640,h:900,kg:1.8,priceWBS:4730,priceGD:5060,urlKey:"af64_90"},
+  {name:"610×915",w:610,h:915,kg:1.8,priceWBS:4730,priceGD:5060,urlKey:"af61_91"},
+  {name:"610×864",w:610,h:864,kg:1.7,priceWBS:4620,priceGD:4950,urlKey:"af61_86"},
+  {name:"600×800",w:600,h:800,kg:1.5,priceWBS:4290,priceGD:4620,urlKey:"af60_80"},
+  {name:"500×700",w:500,h:700,kg:1.2,priceWBS:3300,priceGD:3520,urlKey:"af50_70"},
+  {name:"450×600",w:450,h:600,kg:0.93,priceWBS:2860,priceGD:3080,urlKey:"af45_60"},
+  {name:"400×500",w:400,h:500,kg:0.73,priceWBS:2420,priceGD:2640,urlKey:"af40_50"},
+  {name:"300×400",w:300,h:400,kg:0.5,priceWBS:1980,priceGD:2200,urlKey:"af30_40"},
 ];
 
 /* ==========================================================
@@ -89,23 +89,23 @@ const SP_PT=[
   [7500,7900,8300,8700,8900,9200,10300,11500,12800,13700,14400,14900,15700,16500,17500,18600],
 ];
 const SP_STD=[
-  {name:"B1",w:728,h:1030,kg:3.5,priceTax:11110,priceEx:10100},
-  {name:"A1",w:594,h:841,kg:2.3,priceTax:7150,priceEx:6500},
-  {name:"B2",w:515,h:728,kg:1.9,priceTax:6270,priceEx:5700},
-  {name:"A2",w:420,h:594,kg:1.4,priceTax:4620,priceEx:4200},
-  {name:"B3",w:364,h:515,kg:1.05,priceTax:4180,priceEx:3800},
-  {name:"A3",w:297,h:420,kg:0.8,priceTax:3300,priceEx:3000},
-  {name:"B4",w:257,h:364,kg:0.64,priceTax:2860,priceEx:2600},
-  {name:"A4",w:210,h:297,kg:0.47,priceTax:2420,priceEx:2200},
-  {name:"B5",w:182,h:257,kg:0.41,priceTax:2090,priceEx:1900},
-  {name:"680×990",w:680,h:990,kg:3.1,priceTax:10890,priceEx:9900},
-  {name:"640×900",w:640,h:900,kg:2.7,priceTax:8470,priceEx:7700},
-  {name:"610×915",w:610,h:915,kg:2.65,priceTax:7370,priceEx:6700},
-  {name:"610×864",w:610,h:864,kg:2.5,priceTax:7590,priceEx:6900},
-  {name:"600×900",w:600,h:900,kg:2.6,priceTax:7480,priceEx:6800},
-  {name:"600×800",w:600,h:800,kg:2.3,priceTax:7150,priceEx:6500},
-  {name:"500×700",w:500,h:700,kg:1.75,priceTax:6490,priceEx:5900},
-  {name:"400×500",w:400,h:500,kg:1.1,priceTax:4510,priceEx:4100},
+  {name:"B1",w:728,h:1030,kg:3.5,priceTax:11110,priceEx:10100,urlKey:"wf72_103"},
+  {name:"A1",w:594,h:841,kg:2.3,priceTax:7150,priceEx:6500,urlKey:"wf59_84"},
+  {name:"B2",w:515,h:728,kg:1.9,priceTax:6270,priceEx:5700,urlKey:"wf51_72"},
+  {name:"A2",w:420,h:594,kg:1.4,priceTax:4620,priceEx:4200,urlKey:"wf42_59"},
+  {name:"B3",w:364,h:515,kg:1.05,priceTax:4180,priceEx:3800,urlKey:"wf36_51"},
+  {name:"A3",w:297,h:420,kg:0.8,priceTax:3300,priceEx:3000,urlKey:"wf29_42"},
+  {name:"B4",w:257,h:364,kg:0.64,priceTax:2860,priceEx:2600,urlKey:"wf25_36"},
+  {name:"A4",w:210,h:297,kg:0.47,priceTax:2420,priceEx:2200,urlKey:"wf21_29"},
+  {name:"B5",w:182,h:257,kg:0.41,priceTax:2090,priceEx:1900,urlKey:"wf18_25"},
+  {name:"680×990",w:680,h:990,kg:3.1,priceTax:10890,priceEx:9900,urlKey:"wf68_99"},
+  {name:"640×900",w:640,h:900,kg:2.7,priceTax:8470,priceEx:7700,urlKey:"wf64_90"},
+  {name:"610×915",w:610,h:915,kg:2.65,priceTax:7370,priceEx:6700,urlKey:"wf61_91"},
+  {name:"610×864",w:610,h:864,kg:2.5,priceTax:7590,priceEx:6900,urlKey:"wf61_86"},
+  {name:"600×900",w:600,h:900,kg:2.6,priceTax:7480,priceEx:6800,urlKey:"wf60_90"},
+  {name:"600×800",w:600,h:800,kg:2.3,priceTax:7150,priceEx:6500,urlKey:"wf60_80"},
+  {name:"500×700",w:500,h:700,kg:1.75,priceTax:6490,priceEx:5900,urlKey:"wf50_70"},
+  {name:"400×500",w:400,h:500,kg:1.1,priceTax:4510,priceEx:4100,urlKey:"wf40_50"},
 ];
 
 /* ===== フレーム種別 ===== */
@@ -153,7 +153,7 @@ function estWeight(f,s,l){
 
 /* ===== 店舗 ===== */
 const SHOPS={
-  elcommun:{name:"EL COMMUN online shop 楽天市場店",shortName:"EL COMMUN",
+  elcommun:{name:"EL COMMUN online shop 楽天市場店",shortName:"EL COMMUN",shopId:"elcommun",
     links:{fit:"https://item.rakuten.co.jp/elcommun/af00_00/",stain:"https://item.rakuten.co.jp/elcommun/wf00_00/"},
     sig:`---------------------------------------------------------------
 　EL COMMUN online shop 楽天市場店
@@ -166,7 +166,7 @@ const SHOPS={
 ＊土日／祝日はお休みを頂いております＊
 （営業時間：平日／AM10時～PM17時）
 ---------------------------------------------------------------`},
-  laikle:{name:"LAIKLE 楽天市場店",shortName:"LAIKLE",
+  laikle:{name:"LAIKLE 楽天市場店",shortName:"LAIKLE",shopId:"laikle",
     links:{fit:"https://item.rakuten.co.jp/laikle/af00_00/",stain:"https://item.rakuten.co.jp/laikle/wf00_00/"},
     sig:`---------------------------------------------------------------
 　LAIKLE 楽天市場店
@@ -205,7 +205,8 @@ function buildMail(shop,validRows,grandTotalEx){
     return c.nearStd.map(m=>{
       const mSh=Math.min(m.w,m.h),mLo=Math.max(m.w,m.h);
       const diffNote=(m.diffS>0||m.diffL>0)?`（ご依頼サイズより短辺+${m.diffS}mm／長辺+${m.diffL}mmのサイズです）`:"（ぴったり同サイズです）";
-      return `・${ftd.mailLabel}「${m.name}」（内寸 ${mSh}×${mLo}mm）\n　${ftd.stdPrice(m)}\n　${diffNote}\n　※ ご依頼の ${sh}×${lo}mm に近い規格品です`;
+      const url=`https://item.rakuten.co.jp/${s.shopId}/${m.urlKey}/`;
+      return `・${ftd.mailLabel}「${m.name}」（内寸 ${mSh}×${mLo}mm）\n　${ftd.stdPrice(m)}\n　${diffNote}\n　商品ページ：${url}\n　※ ご依頼の ${sh}×${lo}mm に近い規格品です`;
     });
   });
   const stdSection=stdLines.length>0
