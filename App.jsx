@@ -217,7 +217,10 @@ function buildMail(shop,validRows,grandTotalEx){
 ご依頼のサイズに近い規格品がございます。
 規格品は別注品と比べて価格が安く、納期も短い場合がございますので、あわせてご検討いただけますと幸いです。
 
-${stdLines.join("\n\n")}`
+${stdLines.join("\n\n")}
+
+※ 規格品をご希望の場合は、その旨をご返信ください。改めてご案内いたします。
+※ 下記【別注サイズのご購入方法】は、上記お見積もりの別注サイズをご注文いただく場合の手順です。`
     :"";
   let urlSection;
   if(hasFit&&hasStain){
@@ -244,7 +247,7 @@ ${deliveryLine}${stdSection}
 　＊その他の仕様につきましては 商品ページをご確認ください。
 
 
-【ご購入方法】
+【別注サイズのご購入方法】
 
 ${urlSection}
 
