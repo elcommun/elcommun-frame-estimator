@@ -197,6 +197,28 @@ function buildMail(shop,validRows,grandTotalEx){
     : hasFit
     ? "・納期：ご決済確認から商品の発送まで「約7～10営業日」"
     : "・納期：ご決済確認から商品の発送まで「約9～12営業日」";
+  // 規格サイズ案内（近いサイズがある行のみ）
+  const stdLines=validRows.flatMap(c=>{
+    if(!c.nearStd||c.nearStd.length===0)return[];
+    const sA=parseInt(c.sizeA),sB=parseInt(c.sizeB),sh=Math.min(sA,sB),lo=Math.max(sA,sB);
+    const ftd=FT[c.ft];
+    return c.nearStd.map(m=>{
+      const mSh=Math.min(m.w,m.h),mLo=Math.max(m.w,m.h);
+      const diffNote=(m.diffS>0||m.diffL>0)?`（ご依頼サイズより短辺+${m.diffS}mm／長辺+${m.diffL}mmのサイズです）`:"（ぴったり同サイズです）";
+      return `・${ftd.mailLabel}「${m.name}」（内寸 ${mSh}×${mLo}mm）\n　${ftd.stdPrice(m)}\n　${diffNote}\n　※ ご依頼の ${sh}×${lo}mm に近い規格品です`;
+    });
+  });
+  const stdSection=stdLines.length>0
+    ?`
+
+
+【規格サイズのご案内】
+
+ご依頼のサイズに近い規格品がございます。
+規格品は別注品と比べて価格が安く、納期も短い場合がございますので、あわせてご検討いただけますと幸いです。
+
+${stdLines.join("\n\n")}`
+    :"";
   let urlSection;
   if(hasFit&&hasStain){
     urlSection=`■ アルミフレーム別注ページ：${s.links.fit}\n■ 木製フレーム別注ページ：${s.links.stain}`;
@@ -214,7 +236,7 @@ ${s.name}の 真田と申します。
 【お見積もり内容】
 
 ・${lines}${totalLine}
-${deliveryLine}
+${deliveryLine}${stdSection}
 
 　- 商品の特長 -
 ・縦 横どちらにも掛けられます。
