@@ -196,7 +196,7 @@ function buildMail(shop,validRows,grandTotalEx){
     });
   });
   const stdSection=stdLines.length>0
-    ?`\n\n\n【規格サイズのご案内】\n\nご依頼のサイズに近い規格品がございます。\n規格品は別注品と比べて価格が安く、納期も短い場合がございますので、あわせてご検討いただけますと幸いです。\n\n${stdLines.join("\n\n")}\n\n※ 下記【別注サイズのご購入方法】は、上記お見積もりの別注サイズをご注文いただく場合の手順です。`
+    ?`\n\n\n【規格サイズのご案内】\n\nご依頼のサイズに近い規格品がございます。\n規格品は別注品と比べて価格が安く、納期も短い場合がございますので、もしよろしければそちらもご検討くださいませ。\n\n${stdLines.join("\n\n")}\n\n※ 下記【別注サイズのご購入方法】は、上記お見積もりの別注サイズをご注文いただく場合の手順です。`
     :"";
   let urlSection;
   if(hasFit&&hasStain){urlSection=`■ アルミフレーム別注ページ：${s.links.fit}\n■ 木製フレーム別注ページ：${s.links.stain}`;}
